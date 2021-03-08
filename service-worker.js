@@ -19,7 +19,7 @@ self.addEventListener('install', (e)=>{
             return cache.addAll([
                 'index.html',
                 'product.js',
-                'petstore1.webmanifest',
+                'petstores.webmanifest',
                 'images/yarn.jpg',
                 'images/cat-litter.jpg',
                 'images/laser-pointer.jpg',

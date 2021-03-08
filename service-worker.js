@@ -2,7 +2,7 @@ var cacheName= 'petstoreV1';
 // var cacheFiles= [
 //     'index.html',
 //     'product.js',
-//     'petstore.webmanifest',
+//     'petstore1.webmanifest',
 //     'images/yarn.jpg',
 //     'images/cat-litter.jpg',
 //     'images/laser-pointer.jpg',
@@ -19,7 +19,7 @@ self.addEventListener('install', (e)=>{
             return cache.addAll([
                 'index.html',
                 'product.js',
-                'petstore.webmanifest',
+                'petstore1.webmanifest',
                 'images/yarn.jpg',
                 'images/cat-litter.jpg',
                 'images/laser-pointer.jpg',
@@ -31,17 +31,17 @@ self.addEventListener('install', (e)=>{
     );
 });
 
-self.addEventListener('fetch', function (e) {
-    e.respondWith(
-        caches.match(e.request).then(function (r) {
-            // Download the file if it is not in the cache, 
-            return r || fetch(e.request).then(function (response) {
-                // add the new file to cache
-                return caches.open(cacheName).then(function (cache) {
-                    cache.put(e.request, response.clone());
-                    return response;
-                });
-            });
-        })
-    );
-});
+// self.addEventListener('fetch', function (e) {
+//     e.respondWith(
+//         caches.match(e.request).then(function (r) {
+//             // Download the file if it is not in the cache, 
+//             return r || fetch(e.request).then(function (response) {
+//                 // add the new file to cache
+//                 return caches.open(cacheName).then(function (cache) {
+//                     cache.put(e.request, response.clone());
+//                     return response;
+//                 });
+//             });
+//         })
+//     );
+// });

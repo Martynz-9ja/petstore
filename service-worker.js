@@ -3,11 +3,12 @@ var cacheFiles= [
     'index.html',
     'product.js',
     'petstore.webmanifest',
-    'images/yarn.png',
+    'images/yarn.jpg',
     'images/cat-litter.jpg',
     'images/laser-pointer.jpg',
     'images/cat-house.jpg',
-    'images/icon-512.png'
+    'images/icon-512.png',
+    'images/icon-store-32.png'
 ];
 
 self.addEventListener('install', (e)=>{

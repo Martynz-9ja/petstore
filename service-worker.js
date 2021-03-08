@@ -1,4 +1,4 @@
-var cacheName= 'petstore-v1';
+var cacheName= 'petstore-v3';
 var cacheFiles= [
     'index.html',
     'product.js',
